@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Section -->
+    <section class="top">
+        <div class="container">
+            <div class="row" style="height: 5rem;"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Put your money where your mouth is & conquer your goals!</h1>
+                    <p>Dare to set bold goals and invite your buddies to bet on your victory or downfall! Here's where motivation meetsbetting, meets epic bragging rights.</p>
+                    <p>Join Braggy! now and prepare for glory or hilarious humiliation.</p>
+                    <div name="subscribeForm" id="subscribeForm" style="display:block;">
+                        <form id="subscribe" action="https://docs.google.com/forms/d/e/1FAIpQLSeCn3f-UAIQf3A5IKLhb9lZoURd1tDVuINmOvg3jQOEsNTmgA/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                            <div class="form-container">
+                                <input type="email" name="entry.1181599031" placeholder="Enter your email">
+                                <button type="submit">Sign up now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="confirm" name="hiddenConfirm" id="hiddenConfirm" style="display:none;">
+                        Awesome! You will be among the first to know and challenge your friends.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/top-image.svg" alt="Top Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid Section -->
+    <section class="grid-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Goal setting</h1>
+                </div>
+                <div class="col-md-4">
+                    Screen
+                </div>
+                <div class="col-md-4">
+                    Picture
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2023 Braggy app. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var submitted = false;
+        // Function to toggle the visibility of the div based on the "submitted" variable
+        function toggleDivVisibility() {
+            var hiddenConfirmDiv = document.getElementById("hiddenConfirm");
+            hiddenConfirmDiv.style.display = submitted ? "block" : "none";
+
+            var subscribeFormDiv = document.getElementById("subscribeForm");
+            subscribeFormDiv.style.display = submitted ? "none" : "block";
+        }
+
+        // Call the function initially
+        toggleDivVisibility();
+
+        document.getElementById("subscribe").addEventListener("submit", function (event) {
+                event.preventDefault();  // Prevent form submission
+                submitted = true;  // Update the value of "submitted" variable
+                toggleDivVisibility();  // Update the visibility of the div
+            });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
