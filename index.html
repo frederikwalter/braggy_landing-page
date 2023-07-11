@@ -21,13 +21,14 @@
                     <p>Dare to set bold goals and invite your buddies to bet on your victory or downfall! Here's where motivation meetsbetting, meets epic bragging rights.</p>
                     <p>Join Braggy! now and prepare for glory or hilarious humiliation.</p>
                     <div name="subscribeForm" id="subscribeForm" style="display:block;">
-                        <form id="subscribe" action="https://docs.google.com/forms/d/e/1FAIpQLSeCn3f-UAIQf3A5IKLhb9lZoURd1tDVuINmOvg3jQOEsNTmgA/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                        <form id="subscribe" action="https://docs.google.com/forms/d/e/1FAIpQLSeCn3f-UAIQf3A5IKLhb9lZoURd1tDVuINmOvg3jQOEsNTmgA/formResponse" method="post" target="hidden-form">
                             <div class="form-container">
                                 <input type="email" name="entry.1181599031" placeholder="Enter your email">
                                 <button type="submit">Sign up now</button>
                             </div>
                         </form>
                     </div>
+                    <iframe name="hidden-form" style="display: none;"></iframe>
                     <div class="confirm" name="hiddenConfirm" id="hiddenConfirm" style="display:none;">
                         Awesome! You will be among the first to know and challenge your friends.
                     </div>
@@ -82,7 +83,6 @@
         toggleDivVisibility();
 
         document.getElementById("subscribe").addEventListener("submit", function (event) {
-                event.preventDefault();  // Prevent form submission
                 submitted = true;  // Update the value of "submitted" variable
                 toggleDivVisibility();  // Update the visibility of the div
             });
