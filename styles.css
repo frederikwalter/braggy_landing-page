@@ -5,6 +5,15 @@ body {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
+.row {
+    margin-bottom: 5rem;
+}
+
+.description-text {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 600;
@@ -63,4 +72,99 @@ input:focus {
     padding: 14px 0px 9px 10px;
     box-shadow: 5px 5px 0px 0px black;
     outline: 0;
+}
+
+.container {
+    max-width: 100%;
+}
+
+h3 {
+    font-size: large;
+    font-weight: 400;
+}
+
+.example {
+    font-size: medium;
+    font-style: italic;
+}
+
+.image-row {
+    display: flex;
+    height: 20rem;
+}
+
+.screen-column-1 {
+    max-width: 50%;
+}
+
+.screen-column-2 {
+    max-width: 50%;
+}
+
+.photo-column-1 {
+    flex: 60%;
+    margin: 0px -20px 0px -2px;
+}
+
+.photo-column-2 {
+    flex: 60%;
+    margin: 0px -20px 0px -20px;
+}
+
+.screen-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    margin-left: 20%;
+    object-fit: contain;
+    z-index: 1;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.screen-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    margin-right: 20%;
+    object-fit: contain;
+    z-index: 1;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.photo-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.photo-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+#accomplish {
+    background-color: #6BE7B7;
+}
+
+#challenge {
+    background-color: #FF79A1;
+}
+
+#accountability {
+    background-color: #D2EDFF;
+}
+
+#money {
+    background-color: #6BE7B7;
+}
+
+#thrill {
+    background-color: #FF79A1;
 }
