@@ -211,9 +211,28 @@ h3 {
     font-weight: bold;
 }
 
+/* Cards */
+.card {
+    border: 1px solid #000;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 0px 0px black;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    position: relative;
+    transform: rotate3d(0, 0, 1, -10deg);
+    z-index: 9999;
+}
+
+.card-img {
+    border-radius: 50%;
+    border: #000000 1px solid;
+    box-shadow: 2px 2px 0px 0px black;
+}
 /* Accordion */
 #faq-container {
-    margin: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }
