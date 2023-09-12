@@ -24,7 +24,6 @@ body {
 .description-text {
     padding-left: 5%;
     padding-right: 5%;
-    width: 100%;
 }
 
 .top-image-col {
@@ -38,7 +37,7 @@ body {
 .top-image {
     max-height: 100%;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: scale-down;
     align-self: flex-end;
 }
 
