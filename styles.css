@@ -24,6 +24,7 @@ body {
 .description-text {
     padding-left: 5%;
     padding-right: 5%;
+    width: 100%;
 }
 
 .top-image-col {
